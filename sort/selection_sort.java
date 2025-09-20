@@ -3,6 +3,7 @@ public class selection_sort {
         /*
         Selection sort - seach through an array and keep track of the minimum 
         value during each iteration and move the smallest number to the beginning.
+        For more info, see README.
 
         Runtime complexity = O(n^2)
         Space: O(1)

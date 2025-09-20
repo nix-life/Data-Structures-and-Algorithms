@@ -2,6 +2,7 @@ public class insertion_sort {
     public static void main(String[] args) {
         /*
         Insertion sort - Compare elements to the left and shift elements to the right if the temporary value is smaller
+        For more info, see README.
 
         Runtime complexity: O(n^2) with a best case of O(n)
         Space: O(1)

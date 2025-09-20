@@ -5,6 +5,7 @@ public class binary_search {
         /*
         Binary Search - Half of the array is eliminated during every search; If we find 
         the value is smaller we find the middle of the smaller section and vise versa.
+        For more info, see README.
 
         Runtime: O(log n)
          */

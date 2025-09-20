@@ -5,6 +5,7 @@ public class interpolation_search {
         the middle value it "guesses" a value in a range based on calculations. 
         If the probe is incorrect the search area is narrowed. 
         The interpolation search is the best with sorted arrays but it does not have to be.
+        For more info, see README.
 
         Runtime:
         - Worst Case: O(n)

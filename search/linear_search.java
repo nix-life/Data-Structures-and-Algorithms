@@ -3,6 +3,7 @@ public class linear_search {
 
         /*
         Linear search = Iterate through a collection one at a time
+        For more info, see README.
         
         Runtine Complexity: O(n)
         */ 

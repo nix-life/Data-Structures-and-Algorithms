@@ -1,7 +1,9 @@
 public class merge_sort {
     public static void main(String[] args) {
         /*
-        Merge sort - Merge sort uses recursion to divide an array into subarrays and sorts them based on the smallest subarrays possible
+        Merge sort - Merge sort uses recursion to divide an array into subarrays 
+        and sorts them based on the smallest subarrays possible.
+        For more info, see README.
 
         Runtime Complexity - O(n log n)
         Space - O(n)
@@ -22,57 +24,56 @@ public class merge_sort {
         // Recursive Merge Sort function
         
         int length = array.length;
-        if (length <= 1) return; // Base case
-        
-        int middle = length / 2;
-        int[] leftArray = new int[middle];
-        int[] rightArray = new int[length - middle];
-
-        int i = 0; // Left Array
-        int j = 0; // RIght Array
-
-        for (; i < length; i++) {
-            if (i < middle) {
-                leftArray[i] = array[i];
-            } else {
-                rightArray[i] = array[i];
-            }
-         }
-
-         mergeSort(leftArray);
-         mergeSort(rightArray);
-         merge(leftArray, rightArray, array);
+		if (length <= 1) return; //base case
+		
+		int middle = length / 2;
+		int[] leftArray = new int[middle];
+		int[] rightArray = new int[length - middle];
+		
+		int i = 0; //left array
+		int j = 0; //right array
+		
+		for (; i < length; i++) {
+			if(i < middle) {
+				leftArray[i] = array[i];
+			}
+			else {
+				rightArray[j] = array[i];
+				j++;
+			}
+		}
+		mergeSort(leftArray);
+		mergeSort(rightArray);
+		merge(leftArray, rightArray, array);
     }
 
     private static void merge(int[] leftArray, int[] rightArray, int[] array) {
         int leftSize = array.length / 2;
-        int rightSize = array.length - leftSize;
-        int i = 0, l = 0, r = 0; // Indices we are using
-
-        // Check the conditions for merging
-        while (l < leftSize && r < rightSize) {
-            if (leftArray[l] < rightArray[r]) {
-                array[i] = leftArray[l];
-                i++;
-                l++;
-            } else {
-                array[i] = rightArray[r];
-                i++;
-                r++;
-            }
-        }
-        
-        // Take in final value if there is a non-paired index
-        while (l < leftSize) {
-            array[i] = leftArray[l];
-            i++;
-            l++; 
-        }
-
-        while (r < rightSize) {
-            array[i] = rightArray[r];
-            i++;
-            r++;
-        }
+		int rightSize = array.length - leftSize;
+		int i = 0, l = 0, r = 0; //indices
+		
+		//check the conditions for merging
+		while(l < leftSize && r < rightSize) {
+			if(leftArray[l] < rightArray[r]) {
+				array[i] = leftArray[l];
+				i++;
+				l++;
+			}
+			else {
+				array[i] = rightArray[r];
+				i++;
+				r++;
+			}
+		}
+		while(l < leftSize) {
+			array[i] = leftArray[l];
+			i++;
+			l++;
+		}
+		while(r < rightSize) {
+			array[i] = rightArray[r];
+			i++;
+			r++;
+		}
     }
 }

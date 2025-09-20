@@ -4,7 +4,9 @@ public class recursion {
         Recursion - when something calls itself. It divides a problem of the same 
         type as the original and is commonly used with sorting algorithms and navigating tress.
         Can be a subsitute for iteration - however, it should not be used for simple 
-        programs like this becuase it can be slower and take more memory; this is just an example/
+        programs like this becuase it can be slower and take more memory; this is just an example
+
+        For more info, see README.
          */
 
         walkIteration(5);

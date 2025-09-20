@@ -1,7 +1,9 @@
 public class recursion_factoria {
     public static void main(String[] args) {
         /*
-        Another example of recursion - A factorial is the product of all positive integers less than or equal to a given non-negative integer.
+        Another example of recursion - A factorial is the product of all positive 
+        integers less than or equal to a given non-negative integer.
+        For more info, see README.
          */
         
         System.out.println(factorial(7));
