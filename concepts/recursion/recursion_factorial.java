@@ -1,4 +1,4 @@
-public class recursion_factoria {
+public class recursion_factorial {
     public static void main(String[] args) {
         /*
         Another example of recursion - A factorial is the product of all positive 
