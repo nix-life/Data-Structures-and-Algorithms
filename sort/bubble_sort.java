@@ -12,7 +12,7 @@ public class bubble_sort {
 
         // Print out the results
         for (int i : array) {
-            System.out.print(i);
+            System.out.print(i + " ");
         }
     }
 

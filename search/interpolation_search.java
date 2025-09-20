@@ -1,7 +1,10 @@
 public class interpolation_search {
     public static void main(String[] args) {
         /*
-        Interpolation Search - similar to binary, but instead of always using the middle value it "guesses" a value in a range based on calculations. If the probe is incorrect the search area is narrowed. The interpolation search is the best with sorted arrays but it does not have to be.
+        Interpolation Search - similar to binary, but instead of always using
+        the middle value it "guesses" a value in a range based on calculations. 
+        If the probe is incorrect the search area is narrowed. 
+        The interpolation search is the best with sorted arrays but it does not have to be.
 
         Runtime:
         - Worst Case: O(n)

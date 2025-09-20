@@ -3,7 +3,8 @@ import java.util.Arrays;
 public class binary_search {
     public static void main(String[] args) {
         /*
-        Binary Search - Half of the array is eliminated during every search; If we find the value is smaller we find the middle of the smaller section and vise versa.
+        Binary Search - Half of the array is eliminated during every search; If we find 
+        the value is smaller we find the middle of the smaller section and vise versa.
 
         Runtime: O(log n)
          */
@@ -17,7 +18,8 @@ public class binary_search {
             array[i] = i;
          }
 
-         int index = Arrays.binarySearch(array, target); // This is the built in binary function that Java uses. I will also be showing a function that we can create ourselves.
+         // This is the built in binary function that Java uses. I will also be showing a function that we can create ourselves.
+         int index = Arrays.binarySearch(array, target); 
 
          if (index != -1) System.out.println("Index found at " + index);
          else System.out.println("Index not found");
