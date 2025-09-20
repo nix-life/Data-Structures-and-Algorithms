@@ -4,6 +4,7 @@ public class insertion_sort {
         Insertion sort - Compare elements to the left and shift elements to the right if the temporary value is smaller
 
         Runtime complexity: O(n^2) with a best case of O(n)
+        Space: O(1)
          */
 
         // Input specification, can be any array

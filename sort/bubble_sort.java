@@ -2,7 +2,9 @@ public class bubble_sort {
     public static void main(String[] args) {
         /*
         Bubble Sort - Pairs of adjacent elements are compared and they are swapped if they aren't in order.
+        
         Runtime Complexity: O(n^2)
+        Space: O(1)
          */
 
          // Input specification, this can be any array

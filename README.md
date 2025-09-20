@@ -13,6 +13,10 @@ Simple Data Structures and Algorithms as well as concepts required for the algor
 * Bubble Sort 
 * Selection Sort
 * Insertion Sort
+* Merge Sort (In Progress)
 
 3. Concepts
-* Recursion (In Progress)
+* Recursion
+    * Simple recursion method and comaprison between iteration and recusion (recursion.java)
+    * An example of recursion with a factorial calculator (recursion_factorial.java)
+    * Another example of recursion by creating the power of two numbers

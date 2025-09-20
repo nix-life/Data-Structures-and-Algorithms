@@ -5,6 +5,7 @@ public class selection_sort {
         value during each iteration and move the smallest number to the beginning.
 
         Runtime complexity = O(n^2)
+        Space: O(1)
          */
 
         //Input specification, can be any array
