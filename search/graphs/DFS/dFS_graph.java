@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class dFS_graph {
 
-    ArrayList<Node> nodes;
+    ArrayList<dFS_node> nodes;
 	int[][] matrix;
 	
 	dFS_graph(int size) {
@@ -10,7 +10,7 @@ public class dFS_graph {
 		matrix = new int[size][size];
 	}
 	
-	public void addNode(Node node) {
+	public void addNode(dFS_node node) {
 		nodes.add(node);
 	}
 	
@@ -29,7 +29,7 @@ public class dFS_graph {
 	
 	public void print() {
 		System.out.print("  ");
-		for (Node node : nodes) {
+		for (dFS_node node : nodes) {
 			System.out.print(node.data + " ");
 		}
 		System.out.println();

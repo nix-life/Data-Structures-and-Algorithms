@@ -1,3 +1,5 @@
+import javafx.scene.Node;
+
 public class bFS_adjacency_matrix {
     public static void main(String[] args) {
         /*
@@ -8,11 +10,11 @@ public class bFS_adjacency_matrix {
 
         bFS_graph graph = new bFS_graph(5);
 		
-		graph.addNode(new Node('A'));
-		graph.addNode(new Node('B'));
-		graph.addNode(new Node('C'));
-		graph.addNode(new Node('D'));
-		graph.addNode(new Node('E'));
+		graph.addNode(new bFS_node('A'));
+		graph.addNode(new bFS_node('B'));
+		graph.addNode(new bFS_node('C'));
+		graph.addNode(new bFS_node('D'));
+		graph.addNode(new bFS_node('E'));
 		
 		graph.addEdge(0, 1);
 		graph.addEdge(1, 2);

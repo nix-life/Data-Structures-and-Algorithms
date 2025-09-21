@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class bFS_graph {
-    ArrayList<Node> nodes;
+    ArrayList<bFS_node> nodes;
 	int[][] matrix;
 	
 	bFS_graph(int size) {
@@ -9,7 +9,7 @@ public class bFS_graph {
 		matrix = new int[size][size];
 	}
 	
-	public void addNode(Node node) {
+	public void addNode(bFS_node node) {
 		nodes.add(node);
 	}
 	
@@ -28,7 +28,7 @@ public class bFS_graph {
 	
 	public void print() {
 		System.out.print("  ");
-		for (Node node : nodes) {
+		for (bFS_node node : nodes) {
 			System.out.print(node.data + " ");
 		}
 		System.out.println();
