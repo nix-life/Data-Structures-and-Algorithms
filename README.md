@@ -5,9 +5,13 @@ Simple Data Structures and Algorithms as well as concepts required for the algor
 ## Current Algorithms Created:
 
 1. Search Algorithms
-* Linear Search
-* Binary Search
-* Interpolation Search
+* Arrays
+    * Linear Search
+    * Binary Search
+    * Interpolation Search
+* Graphs
+    * Depth First Search (In Progress)
+    * Breadth First Search
 
 2. Sort Algorithms
 * Bubble Sort 
@@ -22,7 +26,7 @@ Simple Data Structures and Algorithms as well as concepts required for the algor
     * An example of recursion with a factorial calculator (recursion_factorial.java)
     * Another example of recursion by creating the power of two numbers
 * Hash Table
-* Graphs (In Progress)
+* Graphs
     * Types of graphs - there are two main types of graphs:
         * Undirected Graph - A graph that goes both ways - two nodes that are connected can reach each other
         * Directed Graph - A graph that sometimes goes one way - two nodes connected can result in one node reaching the other while the other does not

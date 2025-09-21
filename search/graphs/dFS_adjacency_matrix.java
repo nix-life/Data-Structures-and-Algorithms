@@ -1,4 +1,4 @@
-public class adjacency_matrix {
+public class dFS_adjacency_matrix {
     public static void main(String[] args) {
         /*
         Adjacency matrix - a 2D array of 1s and 0s representing the edges of a graph. The rows and columns are all nodes and if the value in the matrix is one the nodes are connected. It should be noted that it does not have to be 0s and 1s, it can be true and false or any other number.
@@ -7,7 +7,7 @@ public class adjacency_matrix {
         Space Complexity: O(V^2)
          */
 
-       	Graph graph = new Graph(5);
+        dFS_graph graph = new dFS_graph(5);
 		
 		graph.addNode(new Node('A'));
 		graph.addNode(new Node('B'));
@@ -25,6 +25,6 @@ public class adjacency_matrix {
 		
 		graph.print();
 		
-		System.out.println(graph.checkEdge(0, 1));
+		graph.depthFirstSearch(0);
     }
 }
