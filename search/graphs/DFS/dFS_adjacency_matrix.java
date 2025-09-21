@@ -1,10 +1,13 @@
 public class dFS_adjacency_matrix {
     public static void main(String[] args) {
         /*
-        Adjacency matrix - a 2D array of 1s and 0s representing the edges of a graph. The rows and columns are all nodes and if the value in the matrix is one the nodes are connected. It should be noted that it does not have to be 0s and 1s, it can be true and false or any other number.
+        Depth First Search (DFS) - A search algorithm for traversing through a tree or graph data structure
 
-        Runtime complexity to check an edge: O(1)
-        Space Complexity: O(V^2)
+		There are three main steps to DFS:
+
+		1. Pick a Route
+		2. Keep going until you reach a dead end, or a previously visited node
+		3. Backtrack to last node that has unvisited adjacent neighbours
          */
 
         dFS_graph graph = new dFS_graph(5);
