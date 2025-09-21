@@ -8,7 +8,7 @@ public class adjacency_list {
         Space Complexity: O(V + E)
          */
 
-        Graph graph = new Graph(5);
+        Graph2 graph = new Graph2();
 
         graph.addNode(new Node('A'));
         graph.addNode(new Node('B'));

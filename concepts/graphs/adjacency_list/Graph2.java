@@ -1,9 +1,9 @@
 import java.util.*;
 
-public class Graph {
+public class Graph2 {
     ArrayList<LinkedList<Node>> alist;
 
-    Graph() {
+    Graph2() {
         alist = new ArrayList<>();
     }
 
