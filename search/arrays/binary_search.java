@@ -37,7 +37,7 @@ public class binary_search {
         
         Arrays.sort(array); // Sorting the array
         int low = array[0];
-        int high = array.length-1;
+        int high = array[array.length-1];
 
         while (low <= high) {
             int middle = low + (high-low) / 2;

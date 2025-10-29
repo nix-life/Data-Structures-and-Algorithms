@@ -1,5 +1,3 @@
-import javafx.scene.Node;
-
 public class bFS_adjacency_matrix {
     public static void main(String[] args) {
         /*
