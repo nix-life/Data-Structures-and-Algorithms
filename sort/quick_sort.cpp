@@ -1,39 +1,39 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-int partition(vector<int>& array, int high, int low) {
-    int pivot = array[high];
-    int i = low - 1;
+int partition(vector<int>& list, int low, int high) {
+    int pivot = list[high];
+    int i = low-1;
 
     for (int j = low; j < high; j++) {
-        if (array[j] < pivot) {
+        if (list[j] < pivot) {
             i++;
-            int temp = array[j];
-            array[j] = array[i];
-            array[i] = temp;
+            int temp = list[j];
+            list[j] = list[i];
+            list[i] = temp;
         }
     }
 
-    int temp = array[i+1];
-    array[i+1] = array[high];
-    array[high] = temp;
+    int temp = list[i+1];
+    list[i+1] = list[high];
+    list[high] = temp;
+
     return i+1;
 }
 
-void quicksort(vector<int>& array, int high, int low = 0) {
+void quicksort(vector<int>& list, int low, int high) {
     if (low < high) {
-        int pivot = partition(array, high, low);
-        quicksort(array, pivot-1, low);
-        quicksort(array, high, pivot+1);
+        int idx = partition(list, low, high);
+        quicksort(list, low, idx-1);
+        quicksort(list, idx+1, high);
     }
-
 }
 
 int main() {
     vector<int> list = { 64, 34, 25, 12, 22, 11, 90, 5 };
 
-    quicksort(list, list.size()-1);
-
+    quicksort(list, 0, list.size()-1);
+    
 
     for (int i = 0; i < list.size(); i++) {
         cout << list[i] << "\n";
